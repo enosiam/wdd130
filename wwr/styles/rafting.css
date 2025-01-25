@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #778da9;
+    --secondary-color: #1b263b;
+    --accent-color: #415a77;
+    --text-color:#e0e1dd;
+    --background-color: #0d1b2a;
+    --heading-font: "Oswald", serif;;
+    --body-font:  "Open Sans", serif;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  
+  .sociallinks a {
+    text-decoration: none;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: var(--secondary-color);
+  }
+  
+  .hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .hero article img {
+    float: right;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: var(--accent-color);
+  }
