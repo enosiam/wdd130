@@ -4,8 +4,8 @@
   --accent-color: #415a77;
   --text-color: #e0e1dd;
   --background-color: #0d1b2a;
-  --heading-font: "Oswald", serif;
-  --body-font: "Open Sans", sans-serif;
+  --heading-font: "Oswald", sans-serif; /* Ensure Oswald is sans-serif */
+  --body-font: "Open Sans", sans-serif; /* Ensure Open Sans is sans-serif */
 }
 
 body {
@@ -21,6 +21,7 @@ h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
+
 
 p {
   font-size: 1.1rem;
