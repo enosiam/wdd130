@@ -27,7 +27,7 @@ p {
   color: var(--text-color);
 }
 
-/* Header Grid Layout */
+
 header {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -47,7 +47,7 @@ header h1 {
   max-width: 150px;
 }
 
-/* Navigation Flex Layout */
+
 nav ul {
   display: flex;
   list-style: none;
@@ -66,7 +66,6 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
@@ -114,7 +113,6 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* History Section */
 .history {
   margin-bottom: 40px;
 }
@@ -129,7 +127,7 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* Adventures Section */
+
 .adventures {
   margin-bottom: 40px;
 }
@@ -163,7 +161,7 @@ nav a:hover {
   color: var(--primary-color);
 }
 
-/* Footer */
+
 footer {
   display: flex;
   justify-content: space-between;
