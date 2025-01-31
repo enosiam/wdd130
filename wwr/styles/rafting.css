@@ -4,8 +4,8 @@
   --accent-color: #415a77;
   --text-color: #e0e1dd;
   --background-color: #0d1b2a;
-  --heading-font: "Oswald", sans-serif; /* Ensure Oswald is sans-serif */
-  --body-font: "Open Sans", sans-serif; /* Ensure Open Sans is sans-serif */
+  --heading-font: "Oswald", sans-serif;
+  --body-font: "Open Sans", sans-serif;
 }
 
 body {
@@ -27,44 +27,53 @@ p {
   color: var(--text-color);
 }
 
-.sociallinks a {
-  text-decoration: none;
-}
-
+/* Header Grid Layout */
 header {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
 .logo {
   max-width: 150px;
 }
 
-nav {
+/* Navigation Flex Layout */
+nav ul {
   display: flex;
-  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
 }
 
 nav a {
   color: var(--primary-color);
-  margin: 0 15px;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
   color: var(--accent-color);
 }
 
+/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.hero-img {
+.hero img {
   display: block;
   width: 100%;
   height: auto;
@@ -76,7 +85,8 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero article {
@@ -84,11 +94,12 @@ nav a:hover {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(13, 27, 42, 0.8);
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
-  text-align: center;
+  text-align: left;
+  color: var(--text-color);
 }
 
 .hero article img {
@@ -98,17 +109,73 @@ nav a:hover {
   margin-left: 20px;
 }
 
+.hero article p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* History Section */
+.history {
+  margin-bottom: 40px;
+}
+
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.history p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Adventures Section */
+.adventures {
+  margin-bottom: 40px;
+}
+
+.adventures h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.adventure-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventure-images figure {
+  flex: 1;
+  text-align: center;
+}
+
+.adventure-images img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.adventure-images figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: var(--secondary-color);
-  margin-top: 20px;
+  border-radius: 10px;
 }
 
 footer p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .sociallinks {
@@ -119,4 +186,9 @@ footer p {
 .sociallinks img {
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.sociallinks img:hover {
+  transform: scale(1.2);
 }
