@@ -96,8 +96,8 @@ nav a:hover {
   background-color: rgba(13, 27, 42, 0.8);
   padding: 20px;
   border-radius: 10px;
-  max-width: 400px;
-  text-align: left;
+  width: 80%;
+  text-align: center;
   color: var(--text-color);
 }
 
