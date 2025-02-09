@@ -205,3 +205,131 @@ footer p {
 .sociallinks img:hover {
   transform: scale(1.2);
 }
+
+/* styles/rafting.css */
+
+/* 1. HEADER STYLES (Like the treehouse signboard) */
+header {
+  background-color: #2a5e8d;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* 2. CONTACT SECTION (Like the message board) */
+.employee-profiles {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.employee-profiles img {
+  width: 200px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  margin: 2rem 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2a5e8d;
+  border-radius: 8px;
+}
+
+/* 3. FORM STYLES (Like the message bottles) */
+fieldset {
+  border: 2px solid #2a5e8d;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+legend {
+  font-family: 'Oswald', sans-serif;
+  color: #2a5e8d;
+  padding: 0 1rem;
+}
+
+.form-item {
+  margin: 1rem 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #2a5e8d;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* 4. BUTTON STYLES (Like the launch button) */
+button[type="submit"] {
+  background-color: #2a5e8d;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #1d4569;
+}
+
+/* 5. FOOTER STYLES (Like the base of the treehouse) */
+footer {
+  background-color: #2a5e8d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+}
