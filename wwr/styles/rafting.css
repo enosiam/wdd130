@@ -27,9 +27,9 @@ p {
   color: var(--text-color);
 }
 
-/* Header Grid Layout */
+
 header {
-  display: grid;
+  display: table-row-group;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 20px;
@@ -47,7 +47,7 @@ header h1 {
   max-width: 150px;
 }
 
-/* Navigation Flex Layout */
+
 nav ul {
   display: flex;
   list-style: none;
@@ -66,7 +66,7 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   text-align: center;
@@ -114,7 +114,6 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* History Section */
 .history {
   margin-bottom: 40px;
 }
@@ -142,7 +141,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* Adventures Section */
+
 .adventures {
   margin-bottom: 40px;
 }
@@ -176,7 +175,7 @@ nav a:hover {
   color: var(--primary-color);
 }
 
-/* Footer */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -206,9 +205,8 @@ footer p {
   transform: scale(1.2);
 }
 
-/* styles/rafting.css */
 
-/* 1. HEADER STYLES (Like the treehouse signboard) */
+
 header {
   background-color: #2a5e8d;
   padding: 1rem;
@@ -234,7 +232,7 @@ nav a {
   font-family: 'Oswald', sans-serif;
 }
 
-/* 2. CONTACT SECTION (Like the message board) */
+
 .employee-profiles {
   max-width: 800px;
   margin: 2rem auto;
@@ -260,7 +258,7 @@ nav a {
   border-radius: 8px;
 }
 
-/* 3. FORM STYLES (Like the message bottles) */
+
 fieldset {
   border: 2px solid #2a5e8d;
   border-radius: 8px;
@@ -279,7 +277,7 @@ legend {
 }
 
 label {
-  display: block;
+  display: inline-block;
   margin-bottom: 0.5rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -297,7 +295,7 @@ input, textarea {
   margin: 1rem 0;
 }
 
-/* 4. BUTTON STYLES (Like the launch button) */
+
 button[type="submit"] {
   background-color: #2a5e8d;
   color: white;
@@ -313,7 +311,7 @@ button:hover {
   background-color: #1d4569;
 }
 
-/* 5. FOOTER STYLES (Like the base of the treehouse) */
+
 footer {
   background-color: #2a5e8d;
   color: white;

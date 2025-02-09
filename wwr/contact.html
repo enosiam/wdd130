@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Emmanuel Effiong">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Effiong | Contact Us - Whitewater Rafting</title>
-    <meta name="description" content="Learn more about Emmanuel Effiong's Whitewater Rafting company, our mission, and our passion for adventure on the river. Join us for an unforgettable rafting experience!">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -24,69 +16,85 @@
             </ul>
         </nav>
     </header>
-    <section class="employee-profiles">
-        <h2>meet our team</h2>
-       <img src="images/employee1.jpg" alt="Happy employee"> 
-      <p>
-       <hi> Contact Us </hi>
-      </p>
-        <h2><p> Address: NO.9 Etuk Effiong Street </p>
-        <p> Phone Number: +234-813-0153-731 </p>
-        <p> Email:emmanueleffiong149@gmail.com </p>
-        </h2>
-        
-        <div class="map name="><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444948.57318687066!2d7.651792012028492!3d4.983086840493275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106813aaebe9c395%3A0xa912ee4d5df08a81!2sAkwa%20Ibom!5e0!3m2!1sen!2sng!4v1738876322281!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </map>
-        <fieldset>
-            <legend>
-                Contact Information
-            </legend>
-            <div class="form-item">
-            <label for="Username">Username:</label>
-            <input type="text" id="Username" name="Username">
-            </div>
-            <div class="form-item column2">
-            <label for="email">email:</label>
-                <input type="text" id="email" name="email">
-            </div>
-        </fieldset>
 
-        <label>Purpose of Message:</label>
-        <div class="radio-group">
-            <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-            <label for="general">General Inquiry</label>
+    <main> 
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
             
-            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-            <label for="reservation">Reservation Question</label>
             
-            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-            <label for="suggestion">Website Suggestion</label>
-        </div>
+            <div class="team-photos">
+                <img src="images/Empoyees.jpg" alt="River guide Sarah">
+                <img src="images/instructor1.jpg" alt="Safety instructor Mike">
+                <img src="images/EquipmentmanagerLisa.jpg" alt="Equipment manager Lisa">
+                <img src="images/Rafting team group photo.jpg" alt="Rafting team group photo">
+                <img src="images/Rafting_adventure.jpg" alt="Rafting adventure">
+                <img src="images/rafting.jpg" alt="Teamwork on the river">
+                <img src="images/rafting4.jpg" alt="Splash moment">
+            </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+            <form> 
+                <h2>Contact Us</h2>
+                <address>
+                    <p>Address: NO.9 Etuk Effiong Street</p>
+                    <p>Phone: +234-813-0153-731</p>
+                    <p>Email: emmanueleffiong149@gmail.com</p>
+                </address>
 
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444948.57318687066!2d7.651792012028492!3d4.983086840493275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106813aaebe9c395%3A0xa912ee4d5df08a81!2sAkwa%20Ibom!5e0!3m2!1sen!2sng!4v1738876322281!5m2!1sen!2sng" 
+                            width="600" height="450" allowfullscreen loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
 
-        <button type="submit">Submit</button>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-item">
+                        <label for="Username">Username:</label>
+                        <input type="text" id="Username" name="Username">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <div class="radio-group">
+                        <div>
+                            <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-item">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                </fieldset>
 
                 
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>©2025 Whitewater Rafting | Emmanuel Effiong</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="icons/5296499_fb_facebook_facebook_logo_icon.svg" alt="Facebook">
-            </a>
-            <a href="https://instagram.com">
-                <img src="icons/3225191_app_instagram_logo_media_popular_icon.svg" alt="Instagram">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="icons/834713_linkedin_icon.svg" alt="LinkedIn">
-            </a>
-        </nav>
+        <p>©️2025 Emmanuel, Akwa Ibom State.</p> <p>https://app.moqups.com/2bVICmgGKrV4Yp7O8Bn8ixfOHHphIPUx/view/page/a9a5f8d52</p>
     </footer>
 </body>
 </html>
