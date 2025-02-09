@@ -278,7 +278,7 @@ legend {
 }
 
 label {
-  display: flexbox;
+  display: flex;
   margin-bottom: 0.5rem;
   font-family: 'Open Sans', sans-serif;
 }
