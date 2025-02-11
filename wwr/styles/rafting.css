@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #778da9;
+  --primary-color: #e7ecf3;
   --secondary-color: #1b263b;
   --accent-color: #415a77;
   --text-color: #e0e1dd;
@@ -233,6 +233,12 @@ nav a {
 }
 
 
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
 .employee-profiles {
   max-width: 800px;
   margin: 2rem auto;
@@ -268,7 +274,7 @@ fieldset {
 
 legend {
   font-family: 'Oswald', sans-serif;
-  color: #2a5e8d;
+  color: #ffffff;
   padding: 0 1rem;
 }
 
@@ -320,6 +326,10 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+footer > a {
+  color: white;
+  text-decoration: white;
 }
 
 .sociallinks {
