@@ -343,3 +343,103 @@ footer > a {
   width: 30px;
   height: 30px;
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.trip {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid var(--text-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 10px;
+}
+
+.sociallinks img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.sociallinks img:hover {
+  transform: scale(1.2);
+}
