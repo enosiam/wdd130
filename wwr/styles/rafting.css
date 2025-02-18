@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ffffff; /* Changed to a brighter color for better contrast */
+  --primary-color: #e7ecf3;
   --secondary-color: #1b263b;
   --accent-color: #415a77;
   --text-color: #e0e1dd;
@@ -27,13 +27,15 @@ p {
   color: var(--text-color);
 }
 
-/* Header */
+
 header {
-  display: grid;
+  display: table-row-group;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 20px;
+  padding: 10px 20px;
   background-color: var(--secondary-color);
+  border-radius: 10px;
 }
 
 header h1 {
@@ -42,29 +44,29 @@ header h1 {
 }
 
 .logo {
-  width: 80px;
-  height: auto;
+  max-width: 150px;
 }
+
 
 nav ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
 nav a {
-  color: #ffffff; /* Changed to white for better contrast */
+  color: var(--primary-color);
   text-decoration: none;
-  font-family: var(--heading-font);
+  font-weight: bold;
 }
 
 nav a:hover {
   color: var(--accent-color);
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   text-align: center;
@@ -92,7 +94,7 @@ nav a:hover {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(13, 27, 42, 0.9); /* Slightly darker for better contrast */
+  background-color: rgba(13, 27, 42, 0.8);
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
@@ -112,7 +114,6 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* History Section */
 .history {
   margin-bottom: 40px;
 }
@@ -140,7 +141,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* Adventure Section */
+
 .adventures {
   margin-bottom: 40px;
 }
@@ -174,7 +175,7 @@ nav a:hover {
   color: var(--primary-color);
 }
 
-/* Footer */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -182,7 +183,6 @@ footer {
   padding: 20px;
   background-color: var(--secondary-color);
   border-radius: 10px;
-  color: white;
 }
 
 footer p {
@@ -205,7 +205,163 @@ footer p {
   transform: scale(1.2);
 }
 
-/* CTA Section */
+
+
+header {
+  background-color: #2a5e8d;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.employee-profiles {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.employee-profiles img {
+  width: 200px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  margin: 2rem 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2a5e8d;
+  border-radius: 8px;
+}
+
+
+fieldset {
+  border: 2px solid #778da9;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+legend {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  padding: 0 1rem;
+}
+
+.form-item {
+  margin: 1rem 0;
+  display: grid;
+}
+
+label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #2a5e8d;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+
+button[type="submit"] {
+  background-color: #2a5e8d;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+  
+}
+
+button:hover {
+  background-color: #1d4569;
+}
+
+
+footer {
+  background-color: #2a5e8d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+footer > a {
+  color: white;
+  text-decoration: white;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
 .cta {
   text-align: center;
   margin: 40px 0;
@@ -224,7 +380,6 @@ footer p {
   background-color: var(--secondary-color);
 }
 
-/* Trip Section */
 .trip-descriptions {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -260,69 +415,31 @@ footer p {
   color: white;
 }
 
-/* Map Section */
-.map {
-  width: 100%;
-  height: 300px;
-  margin: 2rem 0;
-}
-
-.map iframe {
-  width: 100%;
-  height: 100%;
-  border: 2px solid #2a5e8d;
-  border-radius: 8px;
-}
-
-/* Form Section */
-fieldset {
-  border: 2px solid #778da9;
-  border-radius: 8px;
-  margin: 1rem 0;
-  padding: 1rem;
-}
-
-legend {
-  font-family: var(--heading-font);
-  color: #ffffff;
-  padding: 0 1rem;
-}
-
-.form-item {
-  margin: 1rem 0;
-  display: grid;
-}
-
-label {
+footer {
   display: flex;
-  margin-bottom: 0.5rem;
-  font-family: var(--body-font);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #2a5e8d;
-  border-radius: 4px;
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
-.radio-group {
+.sociallinks {
   display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
+  gap: 10px;
 }
 
-button[type="submit"] {
-  background-color: #2a5e8d;
-  color: white;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 5px;
-  font-family: var(--heading-font);
-  cursor: pointer;
-  margin-top: 1rem;
+.sociallinks img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: #1d4569;
+.sociallinks img:hover {
+  transform: scale(1.2);
 }
