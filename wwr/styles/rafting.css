@@ -249,7 +249,9 @@ footer p {
   font-size: 0.9rem;
   color: var(--primary-color); /* Light text for better contrast */
 }
-
+a {
+  color: white;
+}
 
 .sociallinks {
   display: flex;
