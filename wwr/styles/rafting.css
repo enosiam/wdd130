@@ -244,14 +244,18 @@ footer {
   border-radius: 10px;
 }
 
+
+
 footer p {
   margin: 0;
   font-size: 0.9rem;
   color: var(--primary-color); /* Light text for better contrast */
 }
+
 a {
-  color: white;
+  color: var(--primary-color);
 }
+
 
 .sociallinks {
   display: flex;
