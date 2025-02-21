@@ -208,6 +208,8 @@ nav a:hover {
   border-radius: 10px;
 }
 
+
+
 .newsletter label {
   color: var(--primary-color);
 }
@@ -233,6 +235,8 @@ nav a:hover {
 .newsletter button:hover {
   background-color: var(--secondary-color);
 }
+
+
 
 /* Footer */
 footer {
@@ -323,6 +327,8 @@ legend {
   display: grid;
 }
 
+
+
 label {
   display: flex;
   margin-bottom: 0.5rem;
@@ -341,6 +347,8 @@ input, textarea {
   gap: 1rem;
   margin: 1rem 0;
 }
+
+
 
 button[type="submit"] {
   background-color: var(--accent-color);
