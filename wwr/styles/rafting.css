@@ -89,7 +89,7 @@ nav a:hover {
   font-size: 4rem;
   color: var(--text-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  background-color: rgba(13, 27, 42, 0.7); /* Added for better contrast */
+  background-color: rgba(13, 27, 42, 0.7);
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -190,31 +190,31 @@ nav a:hover {
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--secondary-color); /* Darker background for better contrast */
+  background-color: var(--secondary-color);
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .cta-button:hover {
-  background-color: var(--accent-color); /* Lighter on hover */
+  background-color: var(--accent-color);
 }
 
 /* Newsletter Section */
 .newsletter {
-  background-color: var(--secondary-color); /* Darker background for better contrast */
+  background-color: var(--secondary-color);
   padding: 20px;
   text-align: center;
   border-radius: 10px;
 }
 
 .newsletter label {
-  color: var(--primary-color); /* Light text for better contrast */
+  color: var(--primary-color);
 }
 
 .newsletter input {
-  background-color: var(--primary-color); /* Light background */
-  color: var(--background-color); /* Dark text */
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   border: 1px solid var(--accent-color);
   padding: 10px;
   margin-bottom: 10px;
@@ -244,18 +244,20 @@ footer {
   border-radius: 10px;
 }
 
-
-
 footer p {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--primary-color); /* Light text for better contrast */
-}
-
-a {
   color: var(--primary-color);
 }
 
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
 
 .sociallinks {
   display: flex;
@@ -352,6 +354,14 @@ button[type="submit"] {
   margin-top: 1rem;
 }
 
-button:hover {
+button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
